@@ -3,7 +3,7 @@ body {
   background-color: rgb(103, 84, 166);
 }
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 header {
@@ -53,7 +53,7 @@ main {
 }
 main h2 {
   font-weight: 700;
-  font-size: 16;
+  font-size: 16px;
   line-height: 1.5;
   color: black;
   opacity: 0.2;
@@ -65,6 +65,19 @@ main h3 {
   line-height: 1.5;
   color: black;
 }
+main card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main card h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  color: #272044;
+}
 main p {
   font-style: normal;
   font-weight: 400;
@@ -72,6 +85,9 @@ main p {
   line-height: 1.5;
   color: black;
   opacity: 0.7;
+}
+img {
+  width: 100%;
 }
 a {
   color: rgb(247, 232, 232);
@@ -91,6 +107,13 @@ section {
   margin: 0 auto;
   padding: 100px 0;
 }
+.secondary {
+  background-color: rgb(246, 240, 251);
+  opacity: 0.7;
+}
+.text-center {
+  text-align: center;
+}
 .grid {
   display: grid;
   grid-gap: 64px;
@@ -98,8 +121,36 @@ section {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-.grid-3-columns {
+.grid-3-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+  background-color: white;
+}
+.card-header {
+  max-width: 372px;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
+  color: White;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
 }
 footer h3 {
   margin: 0 36px;
@@ -128,9 +179,7 @@ footer li {
   section {
     padding: 30px;
   }
-  .img-responsive {
-    max-width: 100%;
-  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 42px;
